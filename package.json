@@ -1,0 +1,21 @@
+{
+  "name": "my-turborepo",
+  "private": true,
+  "workspaces": [
+    "packages/**",
+    "apps/**"
+  ],
+  "scripts": {
+    "build": "turbo build",
+    "start": "turbo start",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "turbo": "latest"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
